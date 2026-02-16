@@ -384,8 +384,7 @@ section {
 /* ---- WORK SHOWCASE ---- */
 .work-grid {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-columns: 1.2fr 1fr 1fr;
     gap: 1.2rem;
 }
 
@@ -418,7 +417,7 @@ section {
 
 .work-large {
     grid-row: span 2;
-    min-height: 500px;
+    min-height: 480px;
     background: linear-gradient(145deg, #0A1628, #0F2847);
 }
 
