@@ -3,21 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saleel — Professional Websites for Small Businesses | Durham Region & Ontario</title>
-    <meta name="description" content="Saleel builds fast, affordable websites for small businesses in Durham Region & across Canada. Professional design, SEO, and digital growth — launched in 48 hours.">
-    <meta name="keywords" content="web design Durham Region, small business website Ontario, affordable web design Canada, SEO services Durham, Google Business Profile setup, website Oshawa, website Whitby, website Ajax">
+    <title>Saleel — Web Design & Digital Services | Durham Region & Ontario</title>
+    <meta name="description" content="Saleel builds fast, affordable websites for small businesses in Durham Region & across Ontario. Professional design, SEO, and digital growth — launched in 48 hours.">
+    <meta name="keywords" content="web design Durham Region, small business website Ontario, affordable web design Canada, SEO services Durham, website Oshawa, website Whitby, website Ajax">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://saleel.ca/">
-    <meta property="og:title" content="Saleel — Professional Websites for Small Businesses">
+    <meta property="og:title" content="Saleel — Web Design & Digital Services">
     <meta property="og:description" content="Fast, affordable websites for small businesses in Durham Region & Ontario. Launched in 48 hours.">
     <meta property="og:image" content="https://saleel.ca/images/og-image.png">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Saleel — Professional Websites for Small Businesses">
-    <meta name="twitter:description" content="Fast, affordable websites for small businesses in Durham Region & Ontario. Launched in 48 hours.">
 
     <!-- Favicon -->
     <link rel="icon" href="images/logo-icon.png" type="image/png">
@@ -25,10 +20,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- Schema.org -->
     <script type="application/ld+json">
@@ -50,369 +42,476 @@
         "priceRange": "$1,500 - $3,500"
     }
     </script>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- ===== HEADER ===== -->
-    <header class="header">
-        <nav class="nav container">
+
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="nav-inner">
             <a href="#" class="logo">
-                <img src="images/logo-icon.png" alt="Saleel" class="logo-img">
-                <span class="logo-text">saleel</span>
+                <span class="logo-mark">S</span>
+                <span class="logo-word">saleel</span>
             </a>
-            <ul class="nav-links">
-                <li><a href="#services">Services</a></li>
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="/blog/">Blog</a></li>
-            </ul>
-            <a href="#contact" class="btn btn-primary nav-cta">Get Free Quote</a>
-            <button class="mobile-toggle" aria-label="Menu">
-                <span></span><span></span><span></span>
+            <div class="nav-links" id="navLinks">
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#pricing">Pricing</a>
+                <a href="/blog/">Blog</a>
+                <a href="#contact" class="nav-cta">Start a Project</a>
+            </div>
+            <button class="menu-btn" id="menuBtn" aria-label="Menu">
+                <span></span><span></span>
             </button>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
-    <!-- ===== HERO ===== -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-badge">🚀 Websites delivered in 48 hours</div>
-            <h1>Your business deserves<br><span class="gradient-text">a website that works.</span></h1>
-            <p class="hero-sub">We build fast, beautiful, SEO-optimized websites for small businesses in Durham Region and across Ontario. <strong>20% less</strong> than traditional agencies.</p>
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-tag">Web Design Studio — Durham Region</div>
+            <h1>
+                <span class="hero-line">We build websites</span>
+                <span class="hero-line">that make people <span class="accent-text">stay</span><span class="accent">.</span></span>
+            </h1>
+            <p class="hero-sub">Your customers Google you before they call you. We make sure what they find is worth clicking. Designed, built, and launched in 48 hours.</p>
             <div class="hero-actions">
-                <a href="#contact" class="btn btn-primary btn-lg">Launch Your Website →</a>
-                <a href="#services" class="btn btn-ghost btn-lg">See Packages</a>
+                <a href="#contact" class="btn-primary">Get Your Free Quote</a>
+                <a href="#work" class="btn-ghost">See Our Work →</a>
             </div>
-            <div class="hero-proof">
-                <div class="proof-item">
-                    <span class="proof-number">48hr</span>
-                    <span class="proof-label">Delivery</span>
-                </div>
-                <div class="proof-divider"></div>
-                <div class="proof-item">
-                    <span class="proof-number">20%</span>
-                    <span class="proof-label">Less Cost</span>
-                </div>
-                <div class="proof-divider"></div>
-                <div class="proof-item">
-                    <span class="proof-number">100%</span>
-                    <span class="proof-label">Yours to Own</span>
-                </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image-wrap">
+                <img src="images/hero-visual.png" alt="Modern web design showcase" class="hero-img">
             </div>
-            <div class="hero-image">
-                <img src="images/hero-image.png" alt="Small business owner with their new website" loading="lazy">
+            <div class="float-card float-speed">
+                <div class="float-icon">⚡</div>
+                <div class="float-label">PageSpeed</div>
+                <div class="float-value">98<span>/100</span></div>
+            </div>
+            <div class="float-card float-mobile">
+                <div class="float-icon">📱</div>
+                <div class="float-label">Mobile Ready</div>
+                <div class="float-value tick">✓</div>
+            </div>
+            <div class="float-card float-seo">
+                <div class="float-icon">🔍</div>
+                <div class="float-label">SEO Score</div>
+                <div class="float-value">A+</div>
             </div>
         </div>
     </section>
 
-    <!-- ===== SERVICES ===== -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Simple pricing.<br>Serious results.</h2>
-                <p>Choose the package that fits your business. No hidden fees, no surprises.</p>
+    <!-- MARQUEE -->
+    <div class="marquee-wrap">
+        <div class="marquee">
+            <span>Website Design</span><span class="sep">✦</span>
+            <span>SEO Optimization</span><span class="sep">✦</span>
+            <span>Google Business</span><span class="sep">✦</span>
+            <span>Brand Identity</span><span class="sep">✦</span>
+            <span>Content Strategy</span><span class="sep">✦</span>
+            <span>Social Media</span><span class="sep">✦</span>
+            <span>Email Marketing</span><span class="sep">✦</span>
+            <span>Analytics Setup</span><span class="sep">✦</span>
+            <span>Website Design</span><span class="sep">✦</span>
+            <span>SEO Optimization</span><span class="sep">✦</span>
+            <span>Google Business</span><span class="sep">✦</span>
+            <span>Brand Identity</span><span class="sep">✦</span>
+            <span>Content Strategy</span><span class="sep">✦</span>
+            <span>Social Media</span><span class="sep">✦</span>
+            <span>Email Marketing</span><span class="sep">✦</span>
+            <span>Analytics Setup</span><span class="sep">✦</span>
+        </div>
+    </div>
+
+    <!-- WORK / SHOWCASE -->
+    <section id="work">
+        <div class="section-header">
+            <span class="label">Recent Work</span>
+            <h2>Sites we've built<br>for real businesses<span class="accent">.</span></h2>
+        </div>
+        <div class="work-grid">
+            <a href="https://azimtax.ca" target="_blank" class="work-card work-large reveal" style="background: url('images/work-azimtax.png') center/cover no-repeat;">
+                <div class="work-overlay">
+                    <span class="work-tag">Tax & Accounting</span>
+                    <h3>Azim Tax & Accounting</h3>
+                    <p>Professional website for a Scarborough-based tax firm. Custom illustrations, Google Maps integration, mobile-first design.</p>
+                    <span class="work-link">Visit Site →</span>
+                </div>
+            </a>
+            <div class="work-card reveal">
+                <div class="work-overlay">
+                    <span class="work-tag">Your Business?</span>
+                    <h3>This Spot is Yours</h3>
+                    <p>We're building our portfolio with Durham Region businesses. Be one of the first — and get our best pricing.</p>
+                    <a href="#contact" class="work-link">Let's Talk →</a>
+                </div>
             </div>
-            <div class="pricing-grid">
-                <!-- Starter -->
-                <div class="pricing-card">
-                    <div class="pricing-tier">Starter</div>
-                    <div class="pricing-amount">
-                        <span class="currency">$</span>
-                        <span class="price">1,500</span>
-                    </div>
-                    <p class="pricing-desc">Everything you need to get online.</p>
-                    <ul class="pricing-features">
-                        <li>✓ Professional 5-page website</li>
-                        <li>✓ Mobile responsive design</li>
-                        <li>✓ Google Business Profile setup</li>
-                        <li>✓ Basic SEO optimization</li>
-                        <li>✓ Contact form integration</li>
-                        <li>✓ 48-hour delivery</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
-                </div>
-                <!-- Growth (Featured) -->
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <div class="pricing-tier">Growth</div>
-                    <div class="pricing-amount">
-                        <span class="currency">$</span>
-                        <span class="price">2,500</span>
-                    </div>
-                    <p class="pricing-desc">For businesses ready to grow.</p>
-                    <ul class="pricing-features">
-                        <li>✓ Everything in Starter</li>
-                        <li>✓ Custom growth blueprint</li>
-                        <li>✓ 3 months SEO reports</li>
-                        <li>✓ Competitor analysis</li>
-                        <li>✓ Google Analytics setup</li>
-                        <li>✓ Priority support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary btn-full">Get Started</a>
-                </div>
-                <!-- Full Launch -->
-                <div class="pricing-card">
-                    <div class="pricing-tier">Full Launch</div>
-                    <div class="pricing-amount">
-                        <span class="currency">$</span>
-                        <span class="price">3,500</span>
-                    </div>
-                    <p class="pricing-desc">The complete digital launch.</p>
-                    <ul class="pricing-features">
-                        <li>✓ Everything in Growth</li>
-                        <li>✓ Social media templates</li>
-                        <li>✓ Email marketing setup</li>
-                        <li>✓ Content strategy</li>
-                        <li>✓ Brand identity package</li>
-                        <li>✓ 6 months ongoing support</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-outline btn-full">Get Started</a>
+            <div class="work-card reveal">
+                <div class="work-overlay">
+                    <span class="work-tag">Coming Soon</span>
+                    <h3>More Projects Loading</h3>
+                    <p>New builds shipping every week. Check back soon for fresh case studies and results.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== HOW IT WORKS ===== -->
-    <section class="how-it-works" id="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>From zero to online<br>in three steps.</h2>
+    <!-- SERVICES: Bento -->
+    <section id="services">
+        <div class="section-header">
+            <span class="label">What We Do</span>
+            <h2>Everything your business<br>needs to win online<span class="accent">.</span></h2>
+        </div>
+        <div class="bento">
+            <div class="bento-item bento-large reveal">
+                <div class="bento-number">01</div>
+                <h3>Website Design & Development</h3>
+                <p>Custom-designed, hand-coded websites that load fast, look incredible, and convert visitors into customers. No templates, no WordPress bloat — clean code that's truly yours.</p>
+                <div class="bento-graphic">
+                    <div class="code-preview">
+                        <span class="code-tag">&lt;your-site&gt;</span>
+                        <span class="code-prop">  speed: <em>blazing</em></span>
+                        <span class="code-prop">  design: <em>custom</em></span>
+                        <span class="code-prop">  ownership: <em>100% yours</em></span>
+                        <span class="code-tag">&lt;/your-site&gt;</span>
+                    </div>
+                </div>
             </div>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">01</div>
-                    <h3>Tell us about your business</h3>
-                    <p>Fill out our quick brief — your business details, style preferences, and goals. Takes 10 minutes.</p>
+            <div class="bento-item reveal">
+                <div class="bento-number">02</div>
+                <h3>SEO & Google Business</h3>
+                <p>Rank on Google where your customers are searching. Local SEO, keyword optimization, and Google Business Profile setup to own your area.</p>
+            </div>
+            <div class="bento-item reveal">
+                <div class="bento-number">03</div>
+                <h3>Brand Identity</h3>
+                <p>Logo, colour palette, typography, and brand guidelines that give your business a cohesive, professional look across every touchpoint.</p>
+            </div>
+            <div class="bento-item reveal">
+                <div class="bento-number">04</div>
+                <h3>Content & Social</h3>
+                <p>Website copy, blog content, and social media templates to keep your audience engaged and your brand visible.</p>
+            </div>
+            <div class="bento-item bento-wide reveal">
+                <div class="bento-number">05</div>
+                <h3>Growth Strategy</h3>
+                <p>We don't just build and bounce. Every project includes analytics setup, competitor analysis, and a growth blueprint so you know exactly what to do after launch. Monthly SEO reports keep you informed and ahead of the competition.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="process">
+        <div class="section-header">
+            <span class="label">How It Works</span>
+            <h2>Three steps to<br>your new website<span class="accent">.</span></h2>
+        </div>
+        <div class="process-track">
+            <div class="process-step reveal">
+                <div class="step-num">01</div>
+                <div class="step-line"></div>
+                <h3>Tell Us Your Story</h3>
+                <p>Fill out a quick brief — your business, your vibe, your goals. Takes 10 minutes. We handle the rest.</p>
+            </div>
+            <div class="process-step reveal">
+                <div class="step-num">02</div>
+                <div class="step-line"></div>
+                <h3>We Design & Build</h3>
+                <p>Your site is designed and coded within 48 hours. You review it, request changes, and we iterate until it's perfect.</p>
+            </div>
+            <div class="process-step reveal">
+                <div class="step-num">03</div>
+                <div class="step-line"></div>
+                <h3>Launch & Grow</h3>
+                <p>We deploy your site, set up analytics, and hand you a growth blueprint. You're live and ready to win.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- NUMBERS -->
+    <section id="numbers">
+        <div class="numbers-grid">
+            <div class="number-item reveal">
+                <div class="number" data-target="48">0</div>
+                <div class="number-unit">hrs</div>
+                <div class="number-label">Average Delivery</div>
+            </div>
+            <div class="number-item reveal">
+                <div class="number" data-target="20">0</div>
+                <div class="number-unit">%</div>
+                <div class="number-label">Below Market Rate</div>
+            </div>
+            <div class="number-item reveal">
+                <div class="number" data-target="100">0</div>
+                <div class="number-unit">%</div>
+                <div class="number-label">Code Ownership</div>
+            </div>
+            <div class="number-item reveal">
+                <div class="number" data-target="0">0</div>
+                <div class="number-unit">lock-in</div>
+                <div class="number-label">Monthly Contracts</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+        <div class="section-header">
+            <span class="label">Pricing</span>
+            <h2>Transparent pricing<span class="accent">.</span><br>No surprises<span class="accent">.</span></h2>
+        </div>
+        <div class="pricing-grid">
+            <div class="pricing-card reveal">
+                <div class="pricing-tier">Starter</div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span><span class="price">1,500</span>
                 </div>
-                <div class="step">
-                    <div class="step-number">02</div>
-                    <h3>We build, you review</h3>
-                    <p>We design and develop your site within 48 hours. You get unlimited revisions until it's perfect.</p>
+                <p class="pricing-desc">Everything you need to get online and start getting found.</p>
+                <ul class="pricing-features">
+                    <li><span class="check-mark">✓</span> Professional 5-page website</li>
+                    <li><span class="check-mark">✓</span> Mobile responsive design</li>
+                    <li><span class="check-mark">✓</span> Google Business Profile setup</li>
+                    <li><span class="check-mark">✓</span> Basic SEO optimization</li>
+                    <li><span class="check-mark">✓</span> Contact form integration</li>
+                    <li><span class="check-mark">✓</span> 48-hour delivery</li>
+                </ul>
+                <a href="#contact" class="btn-outline">Get Started</a>
+            </div>
+            <div class="pricing-card featured reveal">
+                <div class="pricing-badge">Most Popular</div>
+                <div class="pricing-tier">Growth</div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span><span class="price">2,500</span>
                 </div>
-                <div class="step">
-                    <div class="step-number">03</div>
-                    <h3>Launch & grow</h3>
-                    <p>Your site goes live with SEO, analytics, and a growth plan. We're here to support you after launch.</p>
+                <p class="pricing-desc">For businesses ready to grow and compete.</p>
+                <ul class="pricing-features">
+                    <li><span class="check-mark">✓</span> Everything in Starter</li>
+                    <li><span class="check-mark">✓</span> Custom growth blueprint</li>
+                    <li><span class="check-mark">✓</span> 3 months SEO reports</li>
+                    <li><span class="check-mark">✓</span> Competitor analysis</li>
+                    <li><span class="check-mark">✓</span> Google Analytics setup</li>
+                    <li><span class="check-mark">✓</span> Priority support</li>
+                </ul>
+                <a href="#contact" class="btn-primary">Get Started</a>
+            </div>
+            <div class="pricing-card reveal">
+                <div class="pricing-tier">Full Launch</div>
+                <div class="pricing-amount">
+                    <span class="currency">$</span><span class="price">3,500</span>
+                </div>
+                <p class="pricing-desc">The complete digital launch package.</p>
+                <ul class="pricing-features">
+                    <li><span class="check-mark">✓</span> Everything in Growth</li>
+                    <li><span class="check-mark">✓</span> Social media templates</li>
+                    <li><span class="check-mark">✓</span> Email marketing setup</li>
+                    <li><span class="check-mark">✓</span> Content strategy</li>
+                    <li><span class="check-mark">✓</span> Brand identity package</li>
+                    <li><span class="check-mark">✓</span> 6 months ongoing support</li>
+                </ul>
+                <a href="#contact" class="btn-outline">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY SALEEL -->
+    <section id="why">
+        <div class="section-header">
+            <span class="label">Why Saleel</span>
+            <h2>We're not a typical<br>web agency<span class="accent">.</span></h2>
+        </div>
+        <div class="comparison-grid">
+            <div class="compare-card compare-them reveal">
+                <h3>Traditional Agency</h3>
+                <ul>
+                    <li><span class="x-mark">✕</span> 4-6 week timelines</li>
+                    <li><span class="x-mark">✕</span> $3,000-$10,000+ for basics</li>
+                    <li><span class="x-mark">✕</span> Locked into their platform</li>
+                    <li><span class="x-mark">✕</span> Monthly hosting fees</li>
+                    <li><span class="x-mark">✕</span> Generic WordPress templates</li>
+                    <li><span class="x-mark">✕</span> Disappear after launch</li>
+                </ul>
+            </div>
+            <div class="compare-card compare-us reveal">
+                <h3>Saleel</h3>
+                <ul>
+                    <li><span class="check-mark">✓</span> 48-hour delivery</li>
+                    <li><span class="check-mark">✓</span> Starts at $1,500</li>
+                    <li><span class="check-mark">✓</span> You own all the code</li>
+                    <li><span class="check-mark">✓</span> No monthly lock-in</li>
+                    <li><span class="check-mark">✓</span> Custom hand-coded designs</li>
+                    <li><span class="check-mark">✓</span> Growth support after launch</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials">
+        <div class="section-header">
+            <span class="label">Kind Words</span>
+            <h2>What our clients<br>are saying<span class="accent">.</span></h2>
+        </div>
+        <div class="testimonial-grid">
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"Saleel built our website in under two days. We went from zero online presence to ranking on Google within a month. Incredible value for the price."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">A</div>
+                    <div>
+                        <div class="author-name">Local Business Owner</div>
+                        <div class="author-detail">Durham Region</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"I was quoted $4,000+ from other agencies. Saleel delivered a better product for nearly half the price, and way faster too. No brainer."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">M</div>
+                    <div>
+                        <div class="author-name">Service Business Owner</div>
+                        <div class="author-detail">Oshawa, ON</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-card reveal">
+                <div class="stars">★★★★★</div>
+                <p>"The SEO reports and growth blueprint were a game changer. Our leads doubled in the first quarter after launch. Actually worth every dollar."</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">S</div>
+                    <div>
+                        <div class="author-name">Small Business Founder</div>
+                        <div class="author-detail">Whitby, ON</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ===== WHY SALEEL ===== -->
-    <section class="why-us">
-        <div class="container">
-            <div class="why-grid">
-                <div class="why-content">
-                    <h2>Why businesses choose Saleel.</h2>
-                    <p>We're not a typical agency. We use modern AI-powered workflows to deliver premium quality at startup-friendly prices.</p>
-                </div>
-                <div class="why-cards">
-                    <div class="why-card">
-                        <div class="why-icon">⚡</div>
-                        <h3>48-Hour Turnaround</h3>
-                        <p>Traditional agencies take 4-6 weeks. We deliver in 2 days because we've built better processes.</p>
-                    </div>
-                    <div class="why-card">
-                        <div class="why-icon">💰</div>
-                        <h3>20% Below Market</h3>
-                        <p>Same quality, lower price. Our efficient workflows mean we pass the savings directly to you.</p>
-                    </div>
-                    <div class="why-card">
-                        <div class="why-icon">📈</div>
-                        <h3>Built for Growth</h3>
-                        <p>Every site comes SEO-ready with analytics. We don't just build websites — we build growth engines.</p>
-                    </div>
-                    <div class="why-card">
-                        <div class="why-icon">🤝</div>
-                        <h3>You Own Everything</h3>
-                        <p>No lock-in contracts. No monthly fees for your site. It's yours — the code, the design, everything.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- FAQ -->
+    <section id="faq">
+        <div class="section-header">
+            <span class="label">FAQ</span>
+            <h2>Got questions<span class="accent">?</span></h2>
+        </div>
+        <div class="faq-list">
+            <details class="faq-item reveal">
+                <summary>How can you deliver in 48 hours?</summary>
+                <p>We use modern AI-powered workflows and efficient development processes that let us move fast without sacrificing quality. What takes traditional agencies weeks of back-and-forth, we handle in a focused sprint.</p>
+            </details>
+            <details class="faq-item reveal">
+                <summary>Do I really own the code?</summary>
+                <p>100%. Once your site is delivered, the source code, designs, and all assets are yours. No lock-in, no recurring charges for your own website. Host it wherever you want.</p>
+            </details>
+            <details class="faq-item reveal">
+                <summary>What if I need changes after launch?</summary>
+                <p>All packages include revisions during the build process. After launch, Growth and Full Launch packages include ongoing support. We're always available for additional work at fair hourly rates.</p>
+            </details>
+            <details class="faq-item reveal">
+                <summary>Do you work with businesses outside Durham Region?</summary>
+                <p>Absolutely. While we're based in Durham Region and love working with local businesses, we serve clients across Ontario and Canada. Everything is done digitally.</p>
+            </details>
+            <details class="faq-item reveal">
+                <summary>What do I need to provide?</summary>
+                <p>Just your business details, logo (if you have one), and any preferences for style or content. We handle everything else — copywriting, design, development, and deployment. If you don't have a logo, our Full Launch package includes brand identity.</p>
+            </details>
         </div>
     </section>
 
-    <!-- ===== TESTIMONIALS ===== -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Trusted by local businesses.</h2>
-            </div>
-            <div class="testimonial-grid">
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"Saleel built our website in under two days. We went from zero online presence to ranking on Google within a month. Incredible value."</p>
-                    <div class="testimonial-author">
-                        <strong>— Local Business Owner</strong>
-                        <span>Durham Region</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"I was quoted $4,000+ from other agencies. Saleel delivered a better product for nearly half the price, and faster too."</p>
-                    <div class="testimonial-author">
-                        <strong>— Service Business Owner</strong>
-                        <span>Oshawa, ON</span>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"The SEO reports and growth blueprint were a game changer. Our leads doubled in the first quarter after launch."</p>
-                    <div class="testimonial-author">
-                        <strong>— Small Business Founder</strong>
-                        <span>Whitby, ON</span>
-                    </div>
-                </div>
-            </div>
+    <!-- CTA -->
+    <section id="cta">
+        <div class="cta-inner">
+            <h2>Your competitors already have a website<span class="accent">.</span></h2>
+            <p>Every day without one is a day they're getting the customers that should be yours. Let's fix that.</p>
+            <a href="#contact" class="btn-primary btn-lg">Start Your Project →</a>
         </div>
     </section>
 
-    <!-- ===== ABOUT ===== -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-content">
-                    <h2>We get small business.</h2>
-                    <p>Saleel was founded to solve a simple problem: small businesses deserve great websites without the enterprise price tag.</p>
-                    <p>We're based in Ontario and work with businesses across Durham Region and beyond — from restaurants and salons to trades and professional services. Our team combines modern technology with hands-on service to deliver results that actually drive revenue.</p>
-                    <p>Whether you're starting fresh or upgrading an outdated site, we make the process fast, painless, and affordable.</p>
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <span class="label">Get in Touch</span>
+                <h2>Let's build<br>something great<span class="accent">.</span></h2>
+                <p>Tell us about your business and we'll send you a free, no-obligation quote within 24 hours.</p>
+                <div class="contact-details">
+                    <div class="contact-row">
+                        <span class="contact-icon">✉️</span>
+                        <a href="mailto:info@saleel.ca">info@saleel.ca</a>
+                    </div>
+                    <div class="contact-row">
+                        <span class="contact-icon">📍</span>
+                        <span>Durham Region, Ontario</span>
+                    </div>
                 </div>
-                <div class="about-stats">
-                    <div class="stat">
-                        <span class="stat-number">48hr</span>
-                        <span class="stat-label">Average Delivery</span>
+                <div class="contact-trust">
+                    <div class="trust-item">
+                        <strong>48hr</strong>
+                        <span>Response</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">20%</span>
-                        <span class="stat-label">Below Market Rate</span>
+                    <div class="trust-item">
+                        <strong>Free</strong>
+                        <span>Quote</span>
                     </div>
-                    <div class="stat">
-                        <span class="stat-number">100%</span>
-                        <span class="stat-label">Satisfaction Rate</span>
+                    <div class="trust-item">
+                        <strong>Zero</strong>
+                        <span>Obligation</span>
                     </div>
                 </div>
             </div>
+            <form class="contact-form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Email address" required>
+                <input type="text" name="business" placeholder="Business name">
+                <select name="package">
+                    <option value="" disabled selected>Interested in...</option>
+                    <option value="starter">Starter — $1,500</option>
+                    <option value="growth">Growth — $2,500</option>
+                    <option value="full-launch">Full Launch — $3,500</option>
+                    <option value="not-sure">Not sure yet</option>
+                </select>
+                <textarea name="message" placeholder="Tell us about your business and what you're looking for..." rows="4"></textarea>
+                <button type="submit" class="btn-primary">Send Message →</button>
+            </form>
         </div>
     </section>
 
-    <!-- ===== BLOG PREVIEW ===== -->
-    <section class="blog-preview" id="blog">
-        <div class="container">
-            <div class="section-header">
-                <h2>Insights for business owners.</h2>
-                <p>Tips, news, and strategies to help your business grow online.</p>
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-left">
+                <div class="footer-logo">S<span class="accent">.</span></div>
+                <p>Saleel · Web Design & Digital Services<br>Durham Region & Ontario</p>
             </div>
-            <div class="blog-grid">
-                <article class="blog-card">
-                    <div class="blog-tag">Tax Tips</div>
-                    <h3>CRA Deadlines Every Durham Business Owner Should Know in 2026</h3>
-                    <p>Missing tax deadlines can cost you thousands. Here's your complete calendar for the year ahead.</p>
-                    <a href="/blog/sample-post.html" class="blog-link">Read more →</a>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-tag">Digital Marketing</div>
-                    <h3>5 Free Tools to Boost Your Small Business Online Presence</h3>
-                    <p>You don't need a big budget to start marketing. These free tools can get you started today.</p>
-                    <a href="/blog/" class="blog-link">Read more →</a>
-                </article>
-                <article class="blog-card">
-                    <div class="blog-tag">Local Business</div>
-                    <h3>Why Durham Region Is Booming for Small Businesses in 2026</h3>
-                    <p>New developments, growing population, and untapped digital opportunity — here's what's happening.</p>
-                    <a href="/blog/" class="blog-link">Read more →</a>
-                </article>
-            </div>
-            <div class="blog-cta">
-                <a href="/blog/" class="btn btn-ghost">View All Posts →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== CTA BANNER ===== -->
-    <section class="cta-banner">
-        <div class="container">
-            <h2>Ready to get your business online?</h2>
-            <p>Join Durham Region business owners who chose the smarter way to launch their website.</p>
-            <a href="#contact" class="btn btn-lg">Get Your Free Quote →</a>
-        </div>
-    </section>
-
-    <!-- ===== CONTACT / CTA ===== -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-content">
-                    <h2>Ready to launch?</h2>
-                    <p>Get a free, no-obligation quote for your project. We'll respond within 24 hours.</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <span class="contact-icon">✉</span>
-                            <a href="mailto:info@saleel.ca">info@saleel.ca</a>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Email address" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="business" placeholder="Business name">
-                    </div>
-                    <div class="form-group">
-                        <select name="package">
-                            <option value="" disabled selected>Select a package</option>
-                            <option value="starter">Starter — $1,500</option>
-                            <option value="growth">Growth — $2,500</option>
-                            <option value="full-launch">Full Launch — $3,500</option>
-                            <option value="not-sure">Not sure yet</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Tell us about your project..." rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary btn-full">Send Message →</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===== FOOTER ===== -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <span class="logo-text">saleel</span>
-                    <p>Professional websites for small businesses.<br>Durham Region & Ontario.</p>
-                </div>
-                <div class="footer-links">
+            <div class="footer-links-grid">
+                <div class="footer-col">
                     <h4>Company</h4>
+                    <a href="#work">Work</a>
                     <a href="#services">Services</a>
-                    <a href="#about">About</a>
+                    <a href="#pricing">Pricing</a>
                     <a href="/blog/">Blog</a>
-                    <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-links">
+                <div class="footer-col">
                     <h4>Services</h4>
                     <a href="#services">Website Design</a>
-                    <a href="#services">SEO Optimization</a>
-                    <a href="#services">Google Business Profile</a>
+                    <a href="#services">SEO & Google</a>
+                    <a href="#services">Brand Identity</a>
                     <a href="#services">Growth Strategy</a>
                 </div>
-                <div class="footer-links">
-                    <h4>Areas Served</h4>
+                <div class="footer-col">
+                    <h4>Areas</h4>
                     <a href="#">Oshawa</a>
                     <a href="#">Whitby</a>
                     <a href="#">Ajax</a>
                     <a href="#">Pickering</a>
-                    <a href="#">Durham Region</a>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Saleel. All rights reserved.</p>
-                <p><a href="mailto:info@saleel.ca">info@saleel.ca</a></p>
-            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Saleel. All rights reserved.</p>
+            <a href="mailto:info@saleel.ca">info@saleel.ca</a>
         </div>
     </footer>
 

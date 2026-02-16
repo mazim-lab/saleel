@@ -1,5 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling
+
+    // ---- Nav scroll effect ----
+    const nav = document.getElementById('nav');
+    let lastScroll = 0;
+
+    window.addEventListener('scroll', () => {
+        const scrollY = window.scrollY;
+        if (scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+        lastScroll = scrollY;
+    });
+
+    // ---- Smooth scroll ----
     document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener('click', e => {
             e.preventDefault();
@@ -7,19 +22,23 @@ document.addEventListener('DOMContentLoaded', () => {
             if (target) {
                 const offset = 80;
                 window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+                // Close mobile menu if open
+                navLinks.classList.remove('active');
             }
         });
     });
 
-    // Header blur on scroll
-    const header = document.querySelector('.header');
-    window.addEventListener('scroll', () => {
-        header.style.borderBottomColor = window.scrollY > 50 
-            ? 'rgba(255,255,255,0.08)' 
-            : 'rgba(255,255,255,0.06)';
-    });
+    // ---- Mobile menu ----
+    const menuBtn = document.getElementById('menuBtn');
+    const navLinks = document.getElementById('navLinks');
 
-    // Intersection Observer for fade-in
+    if (menuBtn) {
+        menuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    }
+
+    // ---- Reveal on scroll ----
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -27,34 +46,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 observer.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
-    document.querySelectorAll('.pricing-card, .step, .why-card, .testimonial-card, .blog-card, .stat').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(16px)';
-        el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-        observer.observe(el);
-    });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-    // Add visible class styles
-    const style = document.createElement('style');
-    style.textContent = '.visible { opacity: 1 !important; transform: translateY(0) !important; }';
-    document.head.appendChild(style);
-
-    // Stagger animations
-    document.querySelectorAll('.pricing-grid, .steps-grid, .why-cards, .testimonial-grid, .blog-grid, .about-stats').forEach(grid => {
-        const children = grid.children;
-        Array.from(children).forEach((child, i) => {
-            child.style.transitionDelay = `${i * 0.1}s`;
+    // ---- Stagger children in grids ----
+    document.querySelectorAll('.bento, .pricing-grid, .process-track, .work-grid, .testimonial-grid, .comparison-grid, .faq-list').forEach(grid => {
+        Array.from(grid.children).forEach((child, i) => {
+            if (child.classList.contains('reveal')) {
+                child.style.transitionDelay = `${i * 0.1}s`;
+            }
         });
     });
 
-    // Mobile menu toggle
-    const toggle = document.querySelector('.mobile-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    if (toggle) {
-        toggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+    // ---- Animated number counter ----
+    const numberObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const el = entry.target;
+                const target = parseInt(el.dataset.target);
+                const duration = 1500;
+                const start = performance.now();
+
+                const animate = (now) => {
+                    const elapsed = now - start;
+                    const progress = Math.min(elapsed / duration, 1);
+                    // Ease out cubic
+                    const eased = 1 - Math.pow(1 - progress, 3);
+                    el.textContent = Math.round(target * eased);
+
+                    if (progress < 1) {
+                        requestAnimationFrame(animate);
+                    }
+                };
+
+                requestAnimationFrame(animate);
+                numberObserver.unobserve(el);
+            }
         });
-    }
+    }, { threshold: 0.5 });
+
+    document.querySelectorAll('.number[data-target]').forEach(el => {
+        numberObserver.observe(el);
+    });
+
 });
