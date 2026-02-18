@@ -621,7 +621,7 @@ section {
 /* ---- PRICING ---- */
 .pricing-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
 }
 
@@ -1128,7 +1128,7 @@ footer {
     .work-grid { grid-template-columns: 1fr; }
     .work-large { grid-row: span 1; min-height: 300px; }
 
-    .pricing-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
+    .pricing-grid { grid-template-columns: repeat(2, 1fr); max-width: 880px; margin: 0 auto; }
     .comparison-grid { grid-template-columns: 1fr; }
     .testimonial-grid { grid-template-columns: 1fr; max-width: 500px; margin: 0 auto; }
     .contact-grid { grid-template-columns: 1fr; gap: 3rem; }
