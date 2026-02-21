@@ -1,15 +1,19 @@
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://saleel.ca/</loc>
-    <lastmod>2026-02-15</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://saleel.ca/blog/</loc>
-    <lastmod>2026-02-19</lastmod>
+    <lastmod>2026-02-21</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://saleel.ca/blog/website-roi-calculator-small-business.html</loc>
+    <lastmod>2026-02-21</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://saleel.ca/blog/social-media-strategies-durham-business.html</loc>
@@ -31,4 +35,4 @@
     <lastmod>2026-02-16</lastmod>
     <priority>0.64</priority>
   </url>
-</urlset> 
+</urlset>
