@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://saleel.ca/</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
     <loc>https://saleel.ca/blog/</loc>
-    <lastmod>2026-03-04</lastmod>
+    <lastmod>2026-03-05</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://saleel.ca/blog/durham-web-design-trends-2026.html</loc>
+    <lastmod>2026-03-05</lastmod>
+    <priority>0.64</priority>
   </url>
   <url>
     <loc>https://saleel.ca/blog/10-instagram-content-ideas-durham-business.html</loc>
