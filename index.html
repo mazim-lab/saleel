@@ -515,24 +515,12 @@
                     </div>
                 </div>
             </div>
-            <form class="contact-form reveal" action="/api/contact" method="POST">
-                <input type="hidden" name="source" value="saleel.ca contact form">
-                <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display: none;">
-                <input type="text" name="name" placeholder="Your name" required>
-                <input type="email" name="email" placeholder="Email address" required>
-                <input type="text" name="business" placeholder="Business name">
-                <select name="package">
-                    <option value="" disabled selected>Interested in...</option>
-                    <option value="launchpad">Launch Pad — $500</option>
-                    <option value="starter">Starter — $1,500</option>
-                    <option value="growth">Growth — $2,500</option>
-                    <option value="full-launch">Full Launch — $3,500</option>
-                    <option value="not-sure">Not sure yet</option>
-                </select>
-                <textarea name="message" placeholder="Tell us about your business and what you're looking for..." rows="4"></textarea>
-                <p class="form-status" role="status" aria-live="polite"></p>
-                <button type="submit" class="btn-primary">Send Message →</button>
-            </form>
+            <div class="contact-email-card reveal">
+                <span class="label">Contact Us</span>
+                <h3>Email is best.</h3>
+                <p>Send a note with your business name, what you need, and any timeline you have in mind.</p>
+                <a href="mailto:info@saleel.ca?subject=Saleel%20project%20inquiry" class="btn-primary">Email info@saleel.ca →</a>
+            </div>
         </div>
     </section>
 
