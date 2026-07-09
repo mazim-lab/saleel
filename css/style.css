@@ -1012,6 +1012,12 @@ section {
 .contact-form input::placeholder,
 .contact-form textarea::placeholder { color: var(--text-dim); }
 
+.form-status {
+    min-height: 1.4rem;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
 .contact-form .btn-primary {
     width: 100%;
     padding: 1.1rem;
@@ -1078,6 +1084,31 @@ footer {
 
 .footer-bottom p { color: var(--text-dim); font-size: 0.82rem; }
 .footer-bottom a { color: var(--accent); font-size: 0.82rem; }
+
+/* ---- THANK YOU ---- */
+.thank-you-page {
+    min-height: 72vh;
+    padding: 9rem 4rem 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.thank-you-panel {
+    width: min(760px, 100%);
+}
+
+.thank-you-panel h1 {
+    margin-bottom: 1.5rem;
+}
+
+.thank-you-panel p {
+    max-width: 560px;
+    margin-bottom: 2rem;
+}
+
+.thank-you-panel p a {
+    color: var(--accent);
+}
 
 /* ---- REVEAL ---- */
 .reveal {
@@ -1169,6 +1200,7 @@ footer {
     .footer-inner { flex-direction: column; gap: 2rem; }
     .footer-links-grid { flex-direction: column; gap: 1.5rem; }
     .footer-bottom { flex-direction: column; gap: 0.5rem; }
+    .thank-you-page { padding: 7rem 1.5rem 3rem; }
 
     .contact-trust { flex-wrap: wrap; gap: 1.5rem; }
 }/* ---- BLOG ---- */
